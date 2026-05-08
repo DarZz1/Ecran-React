@@ -1,0 +1,147 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: #FFF;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #545F71;
+  border-bottom: #E5E9EB solid 1px;
+  padding: 12px 0;
+
+  @media (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 1400px) {
+    position: relative;
+    padding-bottom: 20px;
+    align-items: flex-start;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logoImage {
+  height: auto;
+  max-width: 100%;
+}
+
+.navContacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts {
+  display: flex;
+  margin-bottom: 8px;
+  gap: 8px;
+  align-items: center;
+}
+
+.phones {
+  display: flex;
+  gap: 10px;
+}
+
+.nav {
+  @media (max-width: 1400px) {
+    position: absolute;
+    bottom: 20px;
+    right: 3%;
+  }
+}
+
+.navList {
+  display: flex;
+  font-weight: 400;
+  letter-spacing: -0.4px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navLink {
+  padding: 0 12px;
+  text-decoration: none;
+  color: inherit;
+  transition: text-shadow 0.5s;
+
+  &:hover {
+    text-shadow: 0 0 0.65px #2D333D;
+  }
+}
+
+.active {
+  font-weight: 600;
+  color: #0088CC;
+  text-shadow: none;
+}
+
+.loginBlock {
+  position: relative;
+  max-width: 300px;
+}
+
+.loginButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  
+  background: #0088CC;
+  border-radius: 6px;
+  border: #0088cc solid 1px;
+  
+  color: #FFF;
+  font-weight: 600;
+  cursor: pointer;
+
+  padding: 12px 15px;
+  width: 100%;
+
+  transition: all 0.5s;
+
+  @media (min-width: 1500px) {
+    min-width: 300px;
+  }
+
+  @media (max-width: 1400px) {
+    padding: 5px 16px;
+  }
+
+  &:hover {
+    border: #0088CC solid 1px;
+    background: #FFF;
+    color: #0088CC;
+  }
+
+  &:hover .loginButtonIconPath {
+    stroke: #0088CC;
+    fill: #FFF;
+  }
+}
+
+.loginButtonIcon {
+  transition: all 0.5s;
+}
+
+.loginButton[aria-expanded="true"] .loginButtonIcon {
+  transform: rotate(180deg);
+  transition: all 0.5s;
+}
