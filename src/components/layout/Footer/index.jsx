@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 import styles from './Footer.module.css';
-import logo from '';
+import logo from '../../../assets/logo/LOGO.svg';
 
 import { menuItems } from '../../../data/navigation';
 

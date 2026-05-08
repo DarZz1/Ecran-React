@@ -2,7 +2,7 @@ import { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import styles from './Navbar.module.css';
-import logo from '';
+import logo from '../../../assets/logo/LOGO.svg';
 
 import LoginDropdown from '../../shared/LoginDropdown';
 import PhoneLink from '../../shared/PhoneLink';

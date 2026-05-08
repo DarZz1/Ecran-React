@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 1920px;
+  min-width: 320px;
+  margin: 0 auto;
+  line-height: 1.5;
+  color: #24292f;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+  font: inherit;
+  min-width: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  white-space: normal;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+::-webkit-search-decoration,
+::-webkit-search-cancel-button,
+::-webkit-search-results-button,
+::-webkit-search-results-decoration {
+  display: none;
+}
+
+::-webkit-file-upload-button,
+::file-selector-button {
+  font: inherit;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #24292f;
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+label,
+button,
+[role="button"] {
+  user-select: none;
+  cursor: pointer;
+}
+
+img,
+svg,
+iframe {
+  flex: none;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+svg {
+  fill: currentColor;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s ease;
+}
+
+a[href^="tel:"] {
+  white-space: nowrap;
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+
+  @media (min-width: 576px) {
+    max-width: calc(516px + 1.5rem);
+  }
+
+  @media (min-width: 768px) {
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+    max-width: calc(696px + 2.5rem);
+  }
+
+  @media (min-width: 992px) {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    max-width: calc(936px + 3rem);
+  }
+
+  @media (min-width: 1200px) {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    max-width: calc(1116px + 4rem);
+  }
+
+  @media (min-width: 1400px) {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    max-width: calc(1440px + 4rem);
+  }
+}
+
+#root, .app-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+}

@@ -2,7 +2,7 @@ import { useState, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 
 import styles from './Header.module.css';
-import logo from '';
+import logo from '../../../assets/logo/LOGO.svg';
 
 import PhoneLink from '../../shared/PhoneLink';
 import SocialLinks from '../../shared/SocialLinks';

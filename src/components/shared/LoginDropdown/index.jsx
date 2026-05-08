@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
 import styles from './LoginDropdown.module.css';
 
-import axenta from '';
-import winlon from '';
-import globars from '';
+import axenta from '../../../assets/logo/axenta.svg';
+import winlon from '../../../assets/logo/winlon.svg';
+import globars from '../../../assets/logo/globars-logo.png';
 
 const platforms = [
   { name: 'Axenta', url: 'https://axenta.cloud/auth/login', img: axenta },
