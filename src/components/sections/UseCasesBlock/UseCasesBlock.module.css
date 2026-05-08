@@ -1,0 +1,122 @@
+.section {
+  padding-bottom: 60px;
+  padding-top: 60px;
+
+  @media (max-width: 991px) {
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+}
+
+/* Переопределяем цвет заголовка под дизайн секции */
+.section :global(.title) {
+  color: #545F71;
+}
+
+.swiper {
+  padding-bottom: 20px;
+}
+
+.sliderWrapper {
+  position: relative;
+  padding-bottom: 0; 
+}
+
+.sliderWrapper :global(.swiper-button-next) {
+  right: 0 !important;
+}
+
+.sliderWrapper :global(.swiper-button-prev) {
+  left: 0 !important;
+}
+
+.sliderWrapper :global(.swiper-button-next),
+.sliderWrapper :global(.swiper-button-prev) {
+  width: 38px;
+  height: 38px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  top: 55%;
+  transform: translateY(-50%);
+  transition: transform 0.2s, box-shadow 0.2s;
+  opacity: 0.8;
+
+  ::slotted(svg), svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.sliderWrapper :global(.swiper-button-next):hover,
+.sliderWrapper :global(.swiper-button-prev):hover {
+  transform: translateY(-50%) scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.sliderWrapper :global(.swiper-button-prev) { left: -24px; }
+.sliderWrapper :global(.swiper-button-next) { right: -24px; }
+
+@media (max-width: 767px) {
+  .sliderWrapper :global(.swiper-button-next),
+  .sliderWrapper :global(.swiper-button-prev) {
+    display: none !important;
+  }
+
+  .sliderWrapper {
+    padding-bottom: 40px;
+  }
+  .sliderWrapper :global(.swiper-pagination) {
+    display: flex !important;
+    justify-content: center;
+    bottom: 0 !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .sliderWrapper :global(.swiper-pagination) {
+    display: none !important;
+  }
+}
+
+:global(.swiper-pagination-bullet) {
+  background: #C4C9D2;
+  opacity: 1;
+  width: 8px;
+  height: 8px;
+  margin: 0 4px !important;
+  transition: width 0.3s;
+}
+
+:global(.swiper-pagination-bullet-active) {
+  background: #0088CC;
+  width: 24px;
+  border-radius: 4px;
+}
+
+.sliderWrapper :global(.swiper-slide) {
+  height: auto !important;
+}
+
+/* === КНОПКА "ВСЕ ПРИМЕРЫ" === */
+.action {
+  text-align: center;
+  margin-top: 32px;
+}
+
+.actionLink {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0088CC;
+  border: 2px solid #0088CC;
+  border-radius: 6px;
+  padding: 13px 65px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.actionLink:hover {
+  background-color: #0088CC;
+  color: #fff;
+}
