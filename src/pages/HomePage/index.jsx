@@ -5,6 +5,7 @@ import BusinessHelpBlock from '../../components/sections/BusinessHelpBlock';
 import AboutCompany from '../../components/sections/AboutCompany';
 import UseCasesBlock from '../../components/sections/UseCasesBlock';
 import Partners from '../../components/sections/Partners';
+import ContactForm from '../../components/sections/ContactForm';
 
 export default function HomePage() {
   return (
@@ -16,6 +17,7 @@ export default function HomePage() {
         <AboutCompany />
         <UseCasesBlock />
         <Partners />
+        <ContactForm />
     </>
   );
 }
