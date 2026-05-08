@@ -6,6 +6,7 @@ import AboutCompany from '../../components/sections/AboutCompany';
 import UseCasesBlock from '../../components/sections/UseCasesBlock';
 import Partners from '../../components/sections/Partners';
 import ContactForm from '../../components/sections/ContactForm';
+import FAQ from '../../components/sections/FAQ';
 
 export default function HomePage() {
   return (
@@ -18,6 +19,7 @@ export default function HomePage() {
         <UseCasesBlock />
         <Partners />
         <ContactForm />
+        <FAQ />
     </>
   );
 }
