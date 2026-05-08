@@ -2,13 +2,14 @@ import { Link } from 'react-router-dom';
 
 import styles from './Footer.module.css';
 import logo from '../../../assets/logo/LOGO.svg';
+import Container from '../../ui/Container';
 
 import { menuItems } from '../../../data/navigation';
 
 export default function Footer() {
   return (
     <footer className={styles.footer} aria-labelledby="footer">
-      <div className={styles.container}>
+      <Container>
         <div className={styles.inner}>
           <div className={styles.first}>
             <Link to="/" className={styles.logo}>
@@ -117,7 +118,7 @@ export default function Footer() {
             <span>Создание сайтов: DarZz</span>
           </a>
         </div>
-      </div>
+      </Container>
     </footer>
   );
 }

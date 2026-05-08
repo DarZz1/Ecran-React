@@ -1,0 +1,205 @@
+.section {
+  padding-bottom: 60px;
+
+  @media (max-width: 991px) {
+    padding-bottom: 30px;
+  }
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 22px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.item {
+  list-style: none;
+}
+
+.itemWide {
+  grid-column: span 2;
+
+  @media (max-width: 767px) {
+    grid-column: auto;
+  }
+}
+
+/* Базовые стили для карточек внутри секции (нужны для широкой карточки) */
+.card {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  height: 100%;
+  box-sizing: border-box;
+  border: 2px solid #FFF;
+  background: #F5F5F5;
+  border-radius: 12px;
+  color: inherit;
+  text-decoration: none;
+  transition: border-color 0.5s;
+}
+
+.cardContent {
+  position: relative;
+  z-index: 2;
+  padding: 20px 20px 97px 20px;
+}
+
+.cardTitle {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #2D333D;
+  margin: 0 0 8px 0;
+}
+
+.cardMedia {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.cardImg {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Специфичные стили для широкой карточки платформ */
+.cardMediaLast {
+  width: 55%;
+
+  @media (max-width: 1500px) { width: 60%; }
+  @media (max-width: 1425px) { width: 40%; }
+  @media (max-width: 1399px) { width: 50%; }
+  @media (max-width: 1199px) { width: 40%; }
+  @media (max-width: 991px) { width: 50%; }
+  @media (max-width: 776px) { width: 50%; }
+}
+
+.cardMediaLast .cardImg {
+  @media (max-width: 776px) { display: none; }
+}
+
+.platformsList {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 2;
+
+  @media (min-width: 769px) {
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 0;
+  }
+}
+
+.platformBtn {
+  position: relative;
+  color: #545F71;
+  font-size: 14px;
+  font-weight: 700;
+  min-width: 290px;
+  background: #FFF;
+  padding: 9px;
+  border-radius: 24px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: background-color 0.2s;
+  max-height: 40px;
+  border: none;
+  cursor: pointer;
+
+  @media (max-width: 1409px) { min-width: 290px; max-height: 3rem; }
+  @media (max-width: 384px) { min-width: 220px; height: 2.5rem; font-size: 13px; }
+
+  &:hover { background-color: #f0f0f0; }
+}
+
+.platformLogo {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+.platformName {
+  display: inline-block;
+}
+
+.cardPlatforms {
+  background-color: #478CFF;
+  padding: 0;
+  min-height: 244px;
+  border-color: #478CFF;
+}
+
+.cardPlatformsContent {
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  padding-left: 20px;
+  box-sizing: border-box;
+
+  @media (max-width: 767px) {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 35px 10px 30px 10px;
+    align-items: center;
+  }
+
+  @media (max-width: 384px) {
+    padding: 20px 10px 20px 10px;
+  }
+}
+
+.cardPlatformsList {
+  position: absolute;
+  bottom: 31px;
+  left: 20px;
+
+  @media (max-width: 767px) {
+    position: static;
+    margin-top: 20px;
+  }
+}
+
+.cardTitleLight {
+  max-width: 250px;
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31px;
+  margin-bottom: 0;
+
+  @media (max-width: 1409px) { max-width: none; }
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

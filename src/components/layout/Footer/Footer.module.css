@@ -3,12 +3,6 @@
   color: #EEF1F4;
 }
 
-.container {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
 .inner {
   display: flex;
   justify-content: space-between;

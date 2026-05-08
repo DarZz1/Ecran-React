@@ -7,6 +7,7 @@ import logo from '../../../assets/logo/LOGO.svg';
 import PhoneLink from '../../shared/PhoneLink';
 import SocialLinks from '../../shared/SocialLinks';
 import LoginDropdown from '../../shared/LoginDropdown';
+import Container from '../../ui/Container';
 
 import { menuItems } from '../../../data/navigation';
 
@@ -16,7 +17,7 @@ export default function Header() {
 
   return (
     <header className={styles.header} role="banner">
-      <div className={styles.container}>
+      <Container>
         <div className={styles.wrapper}>
           <NavLink className={styles.logo} to="/" aria-label="На главную">
             <img className={styles.logoImage} src={logo} alt="Логотип компании Экран" width={224} height={44} />
@@ -67,7 +68,7 @@ export default function Header() {
             <LoginDropdown dropdownId="login-dropdown-list" isOpen={isLoginOpen} onToggle={setIsLoginOpen} triggerRef={loginButtonRef} />
           </div>
         </div>
-      </div>
+      </Container>
     </header>
   );
 }

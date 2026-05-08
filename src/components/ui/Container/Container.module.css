@@ -1,0 +1,35 @@
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+
+  @media (min-width: 576px) {
+    max-width: calc(516px + 1.5rem);
+  }
+
+  @media (min-width: 768px) {
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+    max-width: calc(696px + 2.5rem);
+  }
+
+  @media (min-width: 992px) {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    max-width: calc(936px + 3rem);
+  }
+
+  @media (min-width: 1200px) {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    max-width: calc(1116px + 4rem);
+  }
+
+  @media (min-width: 1400px) {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    max-width: calc(1440px + 4rem);
+  }
+}

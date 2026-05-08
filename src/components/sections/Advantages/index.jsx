@@ -1,4 +1,5 @@
 import styles from './Advantages.module.css';
+import Container from '../../ui/Container';
 
 const advantages = [
   {
@@ -20,31 +21,29 @@ const advantages = [
 
 export default function Advantages() {
   return (
-    <section className={styles.section} aria-labelledby="advantages-heading">
-      <div className="container">
-        <ul className={styles.list}>
-          {advantages.map((item, index) => (
-            <li key={index} className={styles.item}>
-              <div className={styles.itemIcon} aria-hidden="true">
-                <svg className={styles.itemIconSvg} width="72" height="72" viewBox="0 0 72 72" fill="none">
-                  <path
-                    d="M72 36C72 55.8823 55.8823 72 36 72C16.1177 72 0 55.8823 0 36C0 16.1177 16.1177 0 36 0C55.8823 0 72 16.1177 72 36ZM10.08 36C10.08 50.3152 21.6848 61.92 36 61.92C50.3152 61.92 61.92 50.3152 61.92 36C61.92 21.6848 50.3152 10.08 36 10.08C21.6848 10.08 10.08 21.6848 10.08 36Z"
-                    fill="#E8E9F4"
-                    fillOpacity="0.8"
-                  />
-                  <path d={item.icon} fill="#0088CC"></path>
-                </svg>
+    <Container as="section" className={styles.section} aria-labelledby="advantages-heading">
+      <ul className={styles.list}>
+        {advantages.map((item, index) => (
+          <li key={index} className={styles.item}>
+            <div className={styles.itemIcon} aria-hidden="true">
+              <svg className={styles.itemIconSvg} width="72" height="72" viewBox="0 0 72 72" fill="none">
+                <path
+                  d="M72 36C72 55.8823 55.8823 72 36 72C16.1177 72 0 55.8823 0 36C0 16.1177 16.1177 0 36 0C55.8823 0 72 16.1177 72 36ZM10.08 36C10.08 50.3152 21.6848 61.92 36 61.92C50.3152 61.92 61.92 50.3152 61.92 36C61.92 21.6848 50.3152 10.08 36 10.08C21.6848 10.08 10.08 21.6848 10.08 36Z"
+                  fill="#E8E9F4"
+                  fillOpacity="0.8"
+                />
+                <path d={item.icon} fill="#0088CC"></path>
+              </svg>
+            </div>
+            <div className={styles.itemContent}>
+              <div className={styles.itemValue}>
+                <span>{item.value}</span>
               </div>
-              <div className={styles.itemContent}>
-                <div className={styles.itemValue}>
-                  <span>{item.value}</span>
-                </div>
-                <p className={styles.itemLabel}>{item.label}</p>
-              </div>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </section>
+              <p className={styles.itemLabel}>{item.label}</p>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </Container>
   );
 }
