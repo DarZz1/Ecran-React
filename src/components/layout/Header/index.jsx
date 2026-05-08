@@ -4,9 +4,10 @@ import { NavLink } from 'react-router-dom';
 import styles from './Header.module.css';
 import logo from '';
 
-import { PhoneLink } from '../../shared/PhoneLink';
-import { SocialLinks } from '../../shared/SocialLinks';
-import { LoginDropdown } from '../../shared/LoginDropdown';
+import PhoneLink from '../../shared/PhoneLink';
+import SocialLinks from '../../shared/SocialLinks';
+import LoginDropdown from '../../shared/LoginDropdown';
+
 import { menuItems } from '../../../data/navigation';
 
 export default function Header() {

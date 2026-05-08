@@ -1,0 +1,36 @@
+.phoneLink {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #DCF0FA;
+  border-radius: 88px;
+  margin-right: 20px;
+  padding: 5px 16px;
+  font-weight: 700;
+  letter-spacing: -0.6px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.5s;
+
+  @media (max-width: 1199px) {
+    margin-right: 0;
+  }
+
+  &:hover {
+    background: #0088CC;
+    color: #FFF;
+
+    .phoneIconPath {
+      stroke: #FFF;
+    }
+  }
+}
+
+.phoneIcon {
+  display: block;
+}
+
+.phoneIconPath {
+  fill: none;
+  transition: stroke 0.5s;
+}

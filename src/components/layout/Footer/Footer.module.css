@@ -1,0 +1,253 @@
+.footer {
+  background-color: #00143D;
+  color: #EEF1F4;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+  padding-bottom: 20px;
+
+  @media (max-width: 1199px) {
+    gap: 20px;
+  }
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 1199px) {
+    justify-content: center;
+  }
+}
+
+.soc {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 28px;
+}
+
+.socLink svg path {
+  fill: rgba(255, 255, 255, 0.12);
+}
+
+.socLink svg path + path {
+  fill: white;
+}
+
+.navMenu {
+  display: none;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+
+  @media (max-width: 1199px) {
+    display: flex;
+  }
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  .navItem a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #EEF1F4;
+    text-decoration: none;
+  }
+}
+
+.navInfo {
+  display: flex;
+  gap: 70px;
+
+  @media (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.legalInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  color: #545F71;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (max-width: 1199px) {
+    flex: 1;
+  }
+
+  @media (max-width: 767px) {
+    flex-direction: column-reverse;
+  }
+}
+
+.contactsButton {
+  display: flex;
+  justify-content: center;
+  align-self: flex-start;
+  border-radius: 6px;
+  gap: 8px;
+  background: #0088CC;
+  padding: 13px 16px;
+  text-decoration: none;
+
+  @media (max-width: 1199px) {
+    align-self: center;
+  }
+
+  span {
+    font-weight: 700;
+    color: #FFF;
+  }
+}
+
+.contactsItems {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  @media (max-width: 1199px) {
+    align-items: center;
+  }
+}
+
+.contactsPhone {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #EEF1F4;
+
+  a {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    color: #EEF1F4;
+    text-decoration: none;
+
+    span:hover {
+      text-shadow: 0 0 .7px #FFF;
+      transition: .2s;
+    }
+
+    svg path {
+      fill: none;
+      stroke: #EEF1F4;
+    }
+  }
+}
+
+.contactsEmail {
+  color: #EEF1F4;
+
+  a {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    text-decoration: none;
+    
+    svg path {
+      fill: #EEF1F4;
+    }
+  
+    span:hover {
+      text-shadow: 0 0 .7px #FFF;
+      transition: .2s;
+    }
+  }
+}
+
+.legalInfoRight {
+  display: none;
+  font-size: 14px;
+  color: #545F71;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+
+  @media (max-width: 1199px) {
+    display: flex;
+  }
+}
+
+.legalTitle {
+  font-size: 14px;
+  color: #545F71;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  border-top: #E0EEFF solid 1px;
+  padding: 16px 0;
+  align-items: center;
+
+  @media (max-width: 490px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.bottomPolice {
+  display: flex;
+  align-items: center;
+}
+
+.policeLink {
+  font-size: 12px;
+  font-weight: 400;
+  color: #FFF;
+  border-bottom: #00143D solid 1px;
+  text-decoration: none;
+
+  &:hover {
+    border-bottom: #FFF solid 1px;
+    transition: .2s;
+  }
+}
+
+.developer {
+  display: inline-flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+  gap: 12px;
+  border-bottom: rgba(255, 255, 255, 0) solid 1px;
+  text-decoration: none;
+  color: #FFF;
+
+  &:hover {
+    text-shadow: 0 0 .7px #FFF;
+    border-bottom: #FFF solid 1px;
+    transition: .2s;
+  }
+
+  span {
+    opacity: 60%;
+    color: #FFFFFF;
+  }
+}
