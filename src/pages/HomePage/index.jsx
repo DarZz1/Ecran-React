@@ -4,6 +4,7 @@ import ServicesBlock from '../../components/sections/ServicesBlock';
 import BusinessHelpBlock from '../../components/sections/BusinessHelpBlock';
 import AboutCompany from '../../components/sections/AboutCompany';
 import UseCasesBlock from '../../components/sections/UseCasesBlock';
+import Partners from '../../components/sections/Partners';
 
 export default function HomePage() {
   return (
@@ -14,6 +15,7 @@ export default function HomePage() {
         <BusinessHelpBlock />
         <AboutCompany />
         <UseCasesBlock />
+        <Partners />
     </>
   );
 }
